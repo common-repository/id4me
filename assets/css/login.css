@@ -1,0 +1,191 @@
+body.login form#loginform,
+body.login form#registerform {
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+}
+body.login form#loginform > *,
+body.login form#registerform > * {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+body.login form#loginform p.forgetmenot,
+body.login form#registerform p.forgetmenot {
+  grid-column: 1;
+}
+body.login form#loginform p.submit,
+body.login form#registerform p.submit {
+  grid-column: 2;
+  text-align: right;
+}
+body.login form#loginform div#id4me-logindiv,
+body.login form#registerform div#id4me-logindiv,
+body.login form#loginform div#id4me-registerdiv,
+body.login form#registerform div#id4me-registerdiv {
+  grid-row: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-button,
+body.login form#registerform div#id4me-logindiv div#id4me-button,
+body.login form#loginform div#id4me-registerdiv div#id4me-button,
+body.login form#registerform div#id4me-registerdiv div#id4me-button {
+  display: flex;
+  flex-direction: row;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-button > a#id4me-button-anchor,
+body.login form#registerform div#id4me-logindiv div#id4me-button > a#id4me-button-anchor,
+body.login form#loginform div#id4me-registerdiv div#id4me-button > a#id4me-button-anchor,
+body.login form#registerform div#id4me-registerdiv div#id4me-button > a#id4me-button-anchor {
+  flex-basis: auto;
+  text-indent: 10px;
+  background-image: url('../img/id4me-logo.svg');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: left;
+  background-size: 20px;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-button a#id4me-button-anchor > span#id4me-button-text,
+body.login form#registerform div#id4me-logindiv div#id4me-button a#id4me-button-anchor > span#id4me-button-text,
+body.login form#loginform div#id4me-registerdiv div#id4me-button a#id4me-button-anchor > span#id4me-button-text,
+body.login form#registerform div#id4me-registerdiv div#id4me-button a#id4me-button-anchor > span#id4me-button-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 180px;
+  text-overflow: ellipsis;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-button > a#id4me-button-reset,
+body.login form#registerform div#id4me-logindiv div#id4me-button > a#id4me-button-reset,
+body.login form#loginform div#id4me-registerdiv div#id4me-button > a#id4me-button-reset,
+body.login form#registerform div#id4me-registerdiv div#id4me-button > a#id4me-button-reset {
+  display: none;
+  flex-basis: 5%;
+}
+body.login form#loginform div#id4me-logindiv a.button.loginbutton,
+body.login form#registerform div#id4me-logindiv a.button.loginbutton,
+body.login form#loginform div#id4me-registerdiv a.button.loginbutton,
+body.login form#registerform div#id4me-registerdiv a.button.loginbutton {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #666666;
+  border: none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+  cursor: pointer;
+}
+body.login form#loginform div#id4me-logindiv a.button.loginbutton:hover,
+body.login form#registerform div#id4me-logindiv a.button.loginbutton:hover,
+body.login form#loginform div#id4me-registerdiv a.button.loginbutton:hover,
+body.login form#registerform div#id4me-registerdiv a.button.loginbutton:hover {
+  margin-top: 15px;
+  width: 100%;
+  color: #666666;
+  border: none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
+  cursor: pointer;
+}
+body.login form#loginform div#id4me-logindiv a.button.loginbutton:focus,
+body.login form#registerform div#id4me-logindiv a.button.loginbutton:focus,
+body.login form#loginform div#id4me-registerdiv a.button.loginbutton:focus,
+body.login form#registerform div#id4me-registerdiv a.button.loginbutton:focus {
+  box-shadow: 0 1px 5px 0 #007a9d;
+}
+body.login form#loginform div#id4me-logindiv a.imgage:focus,
+body.login form#registerform div#id4me-logindiv a.imgage:focus,
+body.login form#loginform div#id4me-registerdiv a.imgage:focus,
+body.login form#registerform div#id4me-registerdiv a.imgage:focus {
+  box-shadow: none;
+}
+body.login form#loginform div#id4me-logindiv .hiddenform,
+body.login form#registerform div#id4me-logindiv .hiddenform,
+body.login form#loginform div#id4me-registerdiv .hiddenform,
+body.login form#registerform div#id4me-registerdiv .hiddenform {
+  display: none;
+  margin-top: 15px;
+}
+body.login form#loginform div#id4me-logindiv .hiddenform > *,
+body.login form#registerform div#id4me-logindiv .hiddenform > *,
+body.login form#loginform div#id4me-registerdiv .hiddenform > *,
+body.login form#registerform div#id4me-registerdiv .hiddenform > * {
+  position: relative;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-handler-form.hiddenform,
+body.login form#registerform div#id4me-logindiv div#id4me-handler-form.hiddenform,
+body.login form#loginform div#id4me-registerdiv div#id4me-handler-form.hiddenform,
+body.login form#registerform div#id4me-registerdiv div#id4me-handler-form.hiddenform {
+  text-align: left;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-handler-form.hiddenform > label#id4me-identifier,
+body.login form#registerform div#id4me-logindiv div#id4me-handler-form.hiddenform > label#id4me-identifier,
+body.login form#loginform div#id4me-registerdiv div#id4me-handler-form.hiddenform > label#id4me-identifier,
+body.login form#registerform div#id4me-registerdiv div#id4me-handler-form.hiddenform > label#id4me-identifier {
+  display: inline-block;
+  margin-top: 11px;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-handler-form.hiddenform p#id4me-headline > span,
+body.login form#registerform div#id4me-logindiv div#id4me-handler-form.hiddenform p#id4me-headline > span,
+body.login form#loginform div#id4me-registerdiv div#id4me-handler-form.hiddenform p#id4me-headline > span,
+body.login form#registerform div#id4me-registerdiv div#id4me-handler-form.hiddenform p#id4me-headline > span {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-backtowp.hiddenform > p.id4me-login-or,
+body.login form#registerform div#id4me-logindiv div#id4me-backtowp.hiddenform > p.id4me-login-or,
+body.login form#loginform div#id4me-registerdiv div#id4me-backtowp.hiddenform > p.id4me-login-or,
+body.login form#registerform div#id4me-registerdiv div#id4me-backtowp.hiddenform > p.id4me-login-or {
+  width: 33px;
+  display: inline-block;
+  line-height: 0.5;
+  margin-bottom: 7px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-backtowp.hiddenform p.id4me-login-or span:before,
+body.login form#registerform div#id4me-logindiv div#id4me-backtowp.hiddenform p.id4me-login-or span:before,
+body.login form#loginform div#id4me-registerdiv div#id4me-backtowp.hiddenform p.id4me-login-or span:before,
+body.login form#registerform div#id4me-registerdiv div#id4me-backtowp.hiddenform p.id4me-login-or span:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #007a9d;
+  top: 0;
+  width: 114.5px;
+  right: 100%;
+  margin-right: 5px;
+}
+body.login form#loginform div#id4me-logindiv div#id4me-backtowp.hiddenform p.id4me-login-or span:after,
+body.login form#registerform div#id4me-logindiv div#id4me-backtowp.hiddenform p.id4me-login-or span:after,
+body.login form#loginform div#id4me-registerdiv div#id4me-backtowp.hiddenform p.id4me-login-or span:after,
+body.login form#registerform div#id4me-registerdiv div#id4me-backtowp.hiddenform p.id4me-login-or span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #007a9d;
+  top: 0;
+  width: 114.5px;
+  left: 100%;
+  margin-left: 5px;
+}
+@media all and (-ms-high-contrast: none) {
+  body.login form#loginform div#id4me-logindiv div#id4me-button > a#id4me-button-anchor,
+  body.login form#registerform div#id4me-logindiv div#id4me-button > a#id4me-button-anchor,
+  body.login form#loginform div#id4me-registerdiv div#id4me-button > a#id4me-button-anchor,
+  body.login form#registerform div#id4me-registerdiv div#id4me-button > a#id4me-button-anchor {
+    background-image: url('../img/id4me-logo.png');
+  }
+}
+@media (-ms-high-contrast: active) {
+  body.login form#loginform div#id4me-logindiv div#id4me-button > a#id4me-button-anchor,
+  body.login form#registerform div#id4me-logindiv div#id4me-button > a#id4me-button-anchor,
+  body.login form#loginform div#id4me-registerdiv div#id4me-button > a#id4me-button-anchor,
+  body.login form#registerform div#id4me-registerdiv div#id4me-button > a#id4me-button-anchor {
+    background-image: url('../img/id4me-logo.png');
+  }
+}

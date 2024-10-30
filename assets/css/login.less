@@ -1,0 +1,162 @@
+@color_1: #666666;
+
+body.login {
+	form#loginform, form#registerform {
+		display: grid;
+		grid-auto-flow: row;
+		justify-content: center;
+		>* {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+		p.forgetmenot {
+			grid-column: 1;
+		}
+		p.submit {
+			grid-column: 2;
+			text-align: right;
+		}
+		div#id4me-logindiv, div#id4me-registerdiv {
+			grid-row: 9999;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			div#id4me-button {
+				display: flex;
+				flex-direction: row;
+				>a#id4me-button-anchor {
+					flex-basis: auto;
+					text-indent: 10px;
+					background-image: url('../img/id4me-logo.svg');
+					background-repeat: no-repeat;
+					background-origin: content-box;
+					background-position: left;
+					background-size: 20px;
+				}
+				a#id4me-button-anchor {
+					>span#id4me-button-text {
+						display: inline-block;
+						white-space: nowrap;
+						overflow: hidden;
+						width: 180px;
+						text-overflow: ellipsis;
+					}
+				}
+				>a#id4me-button-reset {
+					display: none;
+					flex-basis: 5%;
+				}
+			}
+			a.button.loginbutton {
+				margin-top: 15px;
+				margin-bottom: 10px;
+				width: 100%;
+				color: @color_1;
+				border: none;
+				box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.25);
+				border-radius: 1px;
+				cursor: pointer;
+				&:hover {
+					margin-top: 15px;
+					width: 100%;
+					color: @color_1;
+					border: none;
+					box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.25);
+					border-radius: 1px;
+					cursor: pointer;
+				}
+				&:focus {
+					box-shadow: 0 1px 5px 0 #007a9d;
+				}
+			}
+			a.imgage {
+				&:focus {
+					box-shadow: none;
+				}
+			}
+			.hiddenform {
+				display: none;
+				margin-top: 15px;
+				>* {
+					position: relative;
+				}
+			}
+			div#id4me-handler-form.hiddenform {
+				text-align: left;
+				>label#id4me-identifier {
+					display: inline-block;
+					margin-top: 11px;
+				}
+				p#id4me-headline {
+					>span {
+						display: flex;
+						width: 100%;
+						border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+						justify-content: space-between;
+					}
+				}
+			}
+			div#id4me-backtowp.hiddenform {
+				>p.id4me-login-or {
+					width: 33px;
+					display: inline-block;
+					line-height: 0.5;
+					margin-bottom: 7px;
+					margin-left: 40%;
+					margin-right: 40%;
+				}
+				p.id4me-login-or {
+					span {
+						&:before {
+							content: "";
+							position: absolute;
+							height: 5px;
+							border-bottom: 1px solid #007a9d;
+							top: 0;
+							width: 114.5px;
+							right: 100%;
+							margin-right: 5px;
+						}
+						&:after {
+							content: "";
+							position: absolute;
+							height: 5px;
+							border-bottom: 1px solid #007a9d;
+							top: 0;
+							width: 114.5px;
+							left: 100%;
+							margin-left: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (-ms-high-contrast: none) {
+	body.login {
+		form#loginform, form#registerform {
+			div#id4me-logindiv, div#id4me-registerdiv {
+				div#id4me-button {
+					>a#id4me-button-anchor {
+						background-image: url('../img/id4me-logo.png');
+					}
+				}
+			}
+		}
+	}
+}
+@media (-ms-high-contrast: active) {
+	body.login {
+		form#loginform, form#registerform {
+			div#id4me-logindiv , div#id4me-registerdiv {
+				div#id4me-button {
+					>a#id4me-button-anchor {
+						background-image: url('../img/id4me-logo.png');
+					}
+				}
+			}
+		}
+	}
+}
